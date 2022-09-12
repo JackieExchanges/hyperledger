@@ -91,7 +91,7 @@ services:
       - "10054:10054"
     command: sh -c 'fabric-ca-server start -b admin:adminpw -d'
     volumes:
-      - /home/ubuntu/hlf-docker-swarm/test-network/organizations/fabric-ca/ordererOrg:/etc/hyperledger/fabric-ca-server
+      - /home/hyperledger/hlf-docker-swarm/test-network/organizations/fabric-ca/ordererOrg:/etc/hyperledger/fabric-ca-server
     container_name: ca_orderer
     networks:
        test:
